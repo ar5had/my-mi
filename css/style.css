@@ -1,0 +1,119 @@
+* {
+  font-family: 'Montserrat';
+  text-align: center;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  background: url("https://s19.postimg.org/m464q4qk3/intro.jpg") no-repeat;
+  background-size: 70vh;
+  background-position: 35vw;
+}
+
+
+.containerr {
+  overflow: auto;
+  padding:  0 20px;
+  background: rgba(237,237,237,.8);
+  height: 100%;
+}
+
+.red_s {
+  color: #e53935;
+}
+
+
+h1 {
+  margin-top: 0;
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 23px;
+}
+
+button {
+  background-color: #ff6700; 
+  color: #fff;
+  border: none;
+  padding: 15px 20px;
+  font-family: 'Source Sans Pro';
+  word-spacing: 2px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #f95b07;
+}
+
+.intro {
+  width: 400px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+
+@-moz-document url-prefix() { ::-moz-focus-inner {border: none} select:-moz-focusring { color: transparent; text-shadow: 0px 0px 0px #616161; } }
+
+
+select {
+  background: none;
+  border: solid #717171 2px;
+  padding: 10px 40px 10px 20px;
+  outline: none;
+  color: #616161;
+  font-size: 14px;
+  font-family: 'Source Sans Pro';
+  outline: none;
+ -moz-outline: none;
+  -moz-user-focus: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+appearence: none;
+  cursor: pointer;
+}
+
+.select {
+  position: relative;
+  width: 50%;
+  display: inline;
+  cursor: pointer
+}
+
+.select::after {
+  position: absolute;
+  top: 5px;
+  right: 30px;
+  font-size: 8px;
+  color: #616161;
+  font-family: "Glyphicons Halflings";
+content: "\e114";
+}
+
+option {
+  font-family: 'Source Sans Pro';
+}
+
+#storage, #color{
+  margin: 0 12px;
+}
+
+.selectHolder {
+  margin: 30px auto;
+}
+
+.disabled {
+  cursor: inherit;
+  opacity: .7;
+}
+
+.disabled:hover {
+  background-color: #ff6700;
+}
