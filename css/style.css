@@ -23,7 +23,6 @@ body {
   color: #e53935;
 }
 
-
 h1 {
   margin-top: 0;
   font-size: 40px;
@@ -34,7 +33,7 @@ h3 {
 }
 
 button {
-  background-color: #ff6700; 
+  background-color: #ff6700;
   color: #fff;
   border: none;
   padding: 15px 20px;
@@ -57,11 +56,10 @@ button:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  
+
 }
 
 @-moz-document url-prefix() { ::-moz-focus-inner {border: none} select:-moz-focusring { color: transparent; text-shadow: 0px 0px 0px #616161; } }
-
 
 select {
   background: none;
@@ -94,7 +92,7 @@ appearence: none;
   font-size: 8px;
   color: #616161;
   font-family: "Glyphicons Halflings";
-content: "\e114";
+  content: "\e114";
 }
 
 option {
