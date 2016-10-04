@@ -1,15 +1,11 @@
 var btn = document.querySelector(".prebook");
-
 var storage = document.querySelector("#storage");
-
-var color = 
-document.querySelector("#color");
-
+var color = document.querySelector("#color");
 var colFlag, storFlag, color, storageS;
 
 
 storage.addEventListener("change", function() {
-  
+
   storFlag = true;
   storage.options[0].selected = false;
   storageS = storage.options[storage.selectedIndex].value;
@@ -17,29 +13,27 @@ storage.addEventListener("change", function() {
     btn.className = "prebook";
     btn.disabled = false;
   }
-    
+
 });
 
 
 color.addEventListener("change", function() {
+
   colFlag = true;
   color.options[0].selected = false;
-  colorS = 
+  colorS =
     color.options[color.selectedIndex].value;
-  console.log(colorS);
-
-
   if(storFlag && colFlag){
     btn.className = "prebook";
     btn.disabled = false;
   }
+
 });
 
 btn.addEventListener("click", function() {
-  console.log(colorS, storageS);
   var id = "";
   if(storageS === "16 GB") {
-    if(colorS === "Grey") 
+    if(colorS === "Grey")
       id = "4163100005";
     else if(colorS === "Silver")
       id = "4163100004";
@@ -55,6 +49,5 @@ btn.addEventListener("click", function() {
       id = "4163000007";
   }
   id = "http://buy.mi.com/in/cart/add/"+id;
-  console.log(id);
   window.open(id);
 });
